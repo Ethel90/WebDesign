@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <script type = "text/javascript">
+            var number;
+            var answer=Math.floor(Math.random()*10);
+            number = window.prompt("Please enter your number,第1次機會");   
+            
+            for(i=0;i<3;i++){
+                if (number==answer){
+                    document.write("<h1>Bingo");
+                    break;
+                }
+                else if (number<answer){
+                    if (i==2&&number!=answer){
+                        document.write("<h1>Game over!");
+                        break;
+                    }
+                    window.alert("請增大數字！");
+                    number=window.prompt("Please enter your number,第"+(i+2)+"次機會");
+                }
+                else if (number>answer){
+                    if (i==2&&number!=answer){
+                        document.write("<h1>Game over!");
+                        break;
+                    }
+                    window.alert("請減小數字！");
+                    number=window.prompt("Please enter your number,第"+(i+2)+"次機會");  
+                }
+            }
+        </script>  
+    </head>     
+</html>
+    <body>
+    </body>
+</html>

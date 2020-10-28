@@ -1,0 +1,114 @@
+<!DOCTTPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Welcom to HTML5</title>
+	</head>
+	
+	<body>
+		<p><h1>Welcom to HTML5!</h1></p>
+		<a href = "http://www.google.com">Google</a>
+		<br>
+		<a href = "http://www.cgu.edu.tw">CGU</a>
+		<br>
+		<a href = "http://www.msn.com">MSN</a>
+		<br>
+		<br>
+		
+		
+		
+		<table border = "1">
+			<caption><h2><Strong>Grade Sheet</Strong></h2></caption>
+
+			<thead>
+				<tr>
+					<th rowspan = "2">Student ID</th>
+					<th colspan = "2">Homework</th>
+					<th colspan = "2">Exam</th>
+					<th rowspan = "2">Grade</th>	
+				</tr>
+				<tr>
+					<th>#1</th>
+					<th>#2</th>
+					<th>Midterm</th>
+					<th>Final</th>
+				</tr>
+			</thead>
+			
+			<tbody>
+				<tr>
+					<th>B12345678</th>
+					<td>80</td>
+					<td>75</td>
+					<td>90</td>
+					<td>88</td>
+					<td>84</td>
+				</tr>
+				<tr>
+					<th>B56789012</th>
+					<td>95</td>
+					<td>90</td>
+					<td>60</td>
+					<td>80</td>
+					<td>78</td>
+				</tr>
+			</tbody>
+		
+		</table>
+		
+		<br>
+		<h2>CGU CSIE 教科書預訂系統</h2>
+		<form method = "post" action = " ">
+			<input type = "hidden" name = "subject" value = " ">
+			<p>
+				<label>
+					姓名:<input name = "name" type = "text" size = "20">
+				</label>
+				<br>
+				<br>
+				<label>
+					寢室分機:<input name = "name" type = "text" size = "20" maxlength = "30">
+				</label>
+				<br>
+				<br>
+				<label>
+					選擇書籍:
+					<ul>
+						<br>
+							1.<input name = "thing" type = "checkbox" value = "Code" size = "25">Internet & World Wide Web : How to Program
+						<br>
+							2.<input name = "thing" type = "checkbox" value = "Code" size = "25">Visual C# 2010 : How to Program
+ 						<br>
+							3.<input name = "thing" type = "checkbox" value = "Code" size = "25">Data Structure
+					</ul>
+				</label>
+				<br>
+			</p>
+			<p>
+				<label>
+					付款方式:
+					<ul>
+						<br>
+							1.<input name = "thing" type = "radio" value = "Code" size = "25">Cash
+						<br>
+							2.<input name = "thing" type = "radio" value = "Code" size = "25">Check
+						<br>
+							3.<input name = "thing" type = "radio" value = "Code" size = "25">信用卡:
+							<br>
+							<br>
+							<ul>
+								<li><input name = "thing" type = "radio" value = "Code" size = "25">Mastercard</li>
+								
+								<li><input name = "thing" type = "radio" value = "Code" size = "25">Visa</li>
+								
+								<li><input name = "thing" type = "radio" value = "Code" size = "25">American Express</li>
+							</ul>
+					</ul>
+				</label>
+			</p>
+			<p>
+				確認訂單，請按下此按鈕<input type = "submit" value = "確定訂單">
+			<p>
+		</form>
+	</body>
+</html>
